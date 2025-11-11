@@ -1,0 +1,6 @@
+# Ignore trained models and temporary files
+modeloEigenFace.xml
+models/
+__pycache__/
+*.pyc
+.vscode/

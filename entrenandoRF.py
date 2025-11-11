@@ -47,5 +47,9 @@ print('Entrenando... (imagenes:', len(facesData), 'labels:', len(labels), ')')
 face_recognizer.train(facesData, np.array(labels))
 
 # Almacenando el modelo obtenido - El Archivo creado sacarlo de la carpeta al momento de actualizar el Git
-face_recognizer.write('modeloEigenFace.xml')
-print('Modelo Almacenado......')
+import os
+models_dir = os.path.join(os.path.dirname(__file__), 'models')
+os.makedirs(models_dir, exist_ok=True)
+model_path = os.path.join(models_dir, 'modeloEigenFace.xml')
+face_recognizer.write(model_path)
+print(f'Modelo almacenado en: {model_path}')
