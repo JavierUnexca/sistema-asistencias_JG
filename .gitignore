@@ -1,4 +1,4 @@
-# Ignore trained models and temporary files
+# Ignorar modelos entrenados y archivos temporales
 modeloEigenFace.xml
 models/
 __pycache__/
