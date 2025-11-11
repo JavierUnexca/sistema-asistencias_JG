@@ -46,6 +46,6 @@ except AttributeError:
 print('Entrenando... (imagenes:', len(facesData), 'labels:', len(labels), ')')
 face_recognizer.train(facesData, np.array(labels))
 
-# Almacenando el modelo obtenido
+# Almacenando el modelo obtenido - El Archivo creado sacarlo de la carpeta al momento de actualizar el Git
 face_recognizer.write('modeloEigenFace.xml')
-print('Modelo Almacenado...')
+print('Modelo Almacenado......')
